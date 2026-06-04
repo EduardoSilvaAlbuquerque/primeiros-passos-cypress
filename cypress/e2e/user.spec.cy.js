@@ -72,6 +72,8 @@ describe('Orange HRM test', () => {
       cy.get(selectorsList.genericField).eq(5).clear().type('Driver578')
       cy.get(selectorsList.selectionButton).eq(0).click()
       cy.contains('Brazilian').click()
+      cy.get(selectorsList.selectionButton).eq(1).click()
+      cy.contains('Other').click()
       cy.get(selectorsList.selectionButton).eq(2).click()
       cy.contains('AB+').click()
       cy.get(selectorsList.genericField).eq(8).clear().type('Driver5785')
