@@ -1,7 +1,15 @@
 {
-  "name": "aulas",
+  "name": "primeiros-passos-cypress",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/EduardoSilvaAlbuquerque/primeiros-passos-cypress#readme",
+  "bugs": {
+    "url": "https://github.com/EduardoSilvaAlbuquerque/primeiros-passos-cypress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoSilvaAlbuquerque/primeiros-passos-cypress.git"
+  },
   "license": "ISC",
   "author": "",
   "type": "commonjs",
@@ -9,7 +17,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "cypress": "^15.16.0"
-  }
+  "dependencies": {
+    "cypress": "^15.18.0"
+  },
+  "devDependencies": {}
 }
