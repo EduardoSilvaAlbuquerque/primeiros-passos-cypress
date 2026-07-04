@@ -57,10 +57,10 @@ class MyInfoPage {
      cy.contains('.oxd-select-option', bloodType).click()
 
     }
-    //salva primeiro formulário
-     savefirstForm(){
+    //salva formulários
+     saveForm(){
      cy.get(this.selectorList().submitButton).eq(0).click()
-         
+     cy.get(this.selectorList().submitButton).eq(1).click()
     }
     
 }

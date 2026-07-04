@@ -7,7 +7,7 @@
 const loginPage = new LoginPage()
 const dashboardPage = new DashboardPage()
 const menuPage = new MenuPage()
-const myInfoPage = new MyInfoPage()
+const myinfoPage = new MyInfoPage()
 
 describe('Orange HRM Tests', () => {
 
@@ -16,16 +16,16 @@ describe('Orange HRM Tests', () => {
     loginPage.loginWithUser(userData.userSuccess.username, userData.userSuccess.password)
     dashboardPage.checkDashboardPage()
     menuPage.acessMyInfo()
-    myInfoPage.fillPersonalDetails('Eduardo', 'da', 'Silva Qa')
-    myInfoPage.fillEmployeeDetails('FutureQa', '121126', '78532', '2008-05-25', '2026-06-12')
-    //escolhe nasc, civil , nasc, sexo, tipo sang
-    myInfoPage.customFields('American','Married','1995-10-10','Male','B+')
+    myinfoPage.fillPersonalDetails('Eduardo', 'da', 'Silva Qa')
+    myinfoPage.fillEmployeeDetails('FutureQa', '121126', '78532', '2008-05-25', '2026-06-12')
+    //escolhe nascionalidade, estado civil , nasc, sexo, tipo sang
+    myinfoPage.customFields('American','Married','1995-10-10','Male','B+')
     //salva o primeiro form
-    myInfoPage.savefirstForm()
+    myinfoPage.saveForm()
 
   })
 
-  it.skip('Login - Fail', () => {
+  it('Login - Fail', () => {
     loginPage.acessLoginPage()
     loginPage.loginWithUser(userData.userFail.username, userData.userFail.password)
     loginPage.checkAccessInvalid()
