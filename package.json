@@ -17,8 +17,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
+  "devDependencies": {
     "cypress": "^15.18.0"
-  },
-  "devDependencies": {}
+  }
 }
