@@ -18,7 +18,7 @@ describe('Orange HRM Tests', () => {
     menuPage.acessMyInfo()
     myInfoPage.fillPersonalDetails('Eduardo', 'da', 'Silva Qa')
     myInfoPage.fillEmployeeDetails('FutureQa', '121126', '78532', '2008-05-25', '2026-06-12')
-    //escolhe tipo sanguíneo
+    //escolhe nasc, civil , nasc, sexo, tipo sang
     myInfoPage.customFields('American','Married','1995-10-10','Male','B+')
     //salva o primeiro form
     myInfoPage.savefirstForm()
