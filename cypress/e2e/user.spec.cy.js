@@ -21,7 +21,7 @@ describe('Orange HRM Tests', () => {
     //escolhe nascionalidade, estado civil , nasc, sexo, tipo sang
     myinfoPage.customFields('American','Married','1995-10-10','Male','B+')
     //salva o primeiro form
-    myinfoPage.saveForm()
+    myinfoPage.savefirstForm()
 
   })
 
