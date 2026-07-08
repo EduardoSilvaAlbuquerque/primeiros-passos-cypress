@@ -13,7 +13,6 @@ class MyInfoPage {
          genderButton:".oxd-radio-wrapper",
          genericButton:".oxd-select-text",
           
-
         }
 
         return selectors
