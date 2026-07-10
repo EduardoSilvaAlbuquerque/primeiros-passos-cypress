@@ -6,14 +6,12 @@ class MenuPage {
 
         }
         return selectors
-    }
-    
-    acessMyInfo( ){
-    cy.get(this.selectorList().myInfoButton).click()
-
-    
    }
+    
+     acessMyInfo( ){
+     cy.get(this.selectorList().myInfoButton).click()
 
+   }
 
 }
 export default MenuPage
