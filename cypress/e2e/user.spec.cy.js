@@ -19,7 +19,7 @@ it('User Info Update - Success', () => {
     dashboardPage.checkDashboardPage()
     menuPage.acessMyInfo()
     myinfoPage.fillPersonalDetails(chance.first(), chance.last(), chance.last())
-    myinfoPage.fillEmployeeDetails(chance.first(), chance.cf(), chance.integer({ min: 1, max: 6}), '2026-07-10')             
+    myinfoPage.fillEmployeeDetails(chance.first(), chance.cf(), chance.integer({ min: 1, max: 6}),'2026-07-10')             
     myinfoPage.customFields(chance.nationality(),'Married','1995-10-10','Male','B+')
     myinfoPage.saveForm()
   })
